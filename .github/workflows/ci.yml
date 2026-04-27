@@ -28,3 +28,10 @@ jobs:
         run: chmod +x ./gradlew
       - name: Compilación
         run: ./gradlew compileJava 
+      - name: Pruebas unitarias
+        run: ./gradlew test
+      - name: Se sube el informe
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: build/reports/tests/test
