@@ -27,4 +27,4 @@ jobs:
       - name: Asegura que gradlew sea ejecutable
         run: chmod +x ./gradlew
       - name: Compilación
-        run: ./gradlew compileJava –no-daemon
+        run: ./gradlew compileJava 
